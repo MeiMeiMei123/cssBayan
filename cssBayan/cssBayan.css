@@ -13,14 +13,14 @@
     height: 0%;
     opacity: 0;
     visibility: hidden;
-    transition: 1s opacity, 3s visibility;
 }
 
-.text:hover~.img {
-    width: 30%;
-    height: 30%;
+.text:hover+.img {
+    width: 20%;
+    height: 20%;
     opacity: 1;
     visibility: visible;
+    transition: 1s opacity, 3s visibility;
 }
 
 .container h2:hover {
@@ -30,4 +30,12 @@
 
 .text {
     margin: 0;
+    cursor: pointer;
+}
+
+.oneMeme {
+    width: 20%;
+    height: 20%;
+    opacity: 1;
+    visibility: visible;
 }
